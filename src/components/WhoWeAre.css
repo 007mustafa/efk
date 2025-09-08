@@ -1,0 +1,138 @@
+body {
+  overflow-x: hidden;
+}
+
+.who-section {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #000000, #002b5c 70%, #014ca1);
+  color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Header */
+.who-header {
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.who-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.who-header span {
+  background: #ffd700;
+  color: #002b5c;
+  padding: 5px 15px;
+  border-radius: 6px;
+}
+
+/* Container */
+.who-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease 0.5s forwards; /* delayed start */
+}
+
+/* Yellow bar */
+.yellow-bar {
+  width: 8px;
+  min-height: 100%;
+  background: #ffd700;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+/* Text side */
+.who-text-slider {
+  flex: 0.8;
+  display: flex;
+  align-items: flex-start;
+}
+
+.who-text-wrapper {
+  max-width: 450px;
+}
+
+.who-text-wrapper p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ffffff;
+  text-align: justify;
+  margin: 0;
+  opacity: 0;
+  animation: fadeSlide 1s ease forwards;
+}
+
+/* Image side */
+.who-img-slider {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.who-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInScale 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Slide animation */
+.fade-slide {
+  animation: fadeSlide 1s ease-in-out forwards;
+}
+
+/* Keyframes */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

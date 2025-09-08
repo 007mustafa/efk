@@ -1,0 +1,77 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 120%; /* a bit larger for parallax */
+    object-fit: cover;
+    z-index: 0;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .hero.scrolled .hero-img {
+    transform: translateY(-40px); /* parallax scroll effect */
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.664); /* dark overlay */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.534);
+    margin-bottom: 20px;
+  }
+  
+  .hero-title .highlight {
+    background: #ffd700; /* yellow */
+    color: #033279; /* dark blue */
+    padding: 5px 15px;
+    border-radius: 6px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    color: #4184ad; /* Light Blue */
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .hero-subtitle span {
+    color: #ffd700; /* Yellow highlight */
+    font-weight: bold;
+  }
+  

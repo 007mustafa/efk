@@ -1,0 +1,93 @@
+.values-section {
+    width: 100%;
+    min-height: 80vh;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #000000, #002b5c 70%, #014ca1); /* same as who we are */
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Heading Wrapper */
+  .values-heading-wrapper {
+    margin-bottom: 60px;
+  }
+  
+  /* Heading */
+  .values-heading {
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  
+  .values-heading .highlight {
+    background: #ffd700; /* yellow container */
+    color: #002b5c;      /* dark blue text */
+    padding: 5px 15px;
+    border-radius: 6px;
+  }
+  
+  /* Container */
+  .values-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Cards */
+  .value-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px 25px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background: linear-gradient(135deg, #002b5c, #002d57);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Hover effect */
+  .value-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 50, 0.5);
+    background: linear-gradient(135deg, #002b5c, #00203d); /* dark blue/black */
+  }
+  
+  .value-card:hover h3,
+  .value-card:hover p {
+    color: #ffd700; /* text becomes yellow */
+  }
+  
+  /* Icon */
+  .value-icon {
+    color: #ffd700;
+    margin-bottom: 25px;
+    width: 64px;   /* bigger size */
+    height: 64px;
+    transition: transform 0.4s ease;
+  }
+  
+  .value-card:hover .value-icon {
+    transform: scale(1.2);
+  }
+  
+  /* Title */
+  .value-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: color 0.4s ease;
+  }
+  
+  /* Description */
+  .value-card p {
+    font-size: 1.05rem;
+    color: #ddd;
+    line-height: 1.6;
+    transition: color 0.4s ease;
+  }
+  
