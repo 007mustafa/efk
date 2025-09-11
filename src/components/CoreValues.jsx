@@ -5,7 +5,7 @@ import "./CoreValues.css";
 
 function CoreValues() {
   return (
-    <section className="values-section">
+    <section className="values-section" id="values">
       {/* Heading */}
       <motion.div
         className="values-heading-wrapper"

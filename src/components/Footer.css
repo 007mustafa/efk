@@ -43,3 +43,47 @@
   font-size: 0.9rem;
   color: #ccc;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+  }
+  
+  .footer-heading {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+  
+  .footer-text {
+    font-size: 0.95rem;
+    margin: 6px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 12px;
+  }
+  
+  .footer-container {
+    max-width: 100%;
+  }
+  
+  .footer-heading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
+  .footer-bottom {
+    margin-top: 15px;
+    padding-top: 10px;
+    font-size: 0.8rem;
+  }
+}

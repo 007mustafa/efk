@@ -25,7 +25,7 @@ function WhoWeAre() {
   }, [slides.length]);
 
   return (
-    <section className="who-section" id="about">
+    <section className="who-section" id="about-us">
       <div className="who-header fade-in">
         <h2>
           Who <span>We Are</span>

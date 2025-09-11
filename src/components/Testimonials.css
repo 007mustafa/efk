@@ -54,4 +54,52 @@
     font-style: italic;
     color: #f1f1f1;
   }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 60px 20px;
+  }
+  
+  .testimonials-heading {
+    font-size: 2.2rem;
+  }
+  
+  .testimonial-subheading {
+    font-size: 1.3rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-section {
+    padding: 40px 15px;
+  }
+  
+  .testimonials-heading-wrapper {
+    margin-bottom: 30px;
+  }
+  
+  .testimonials-heading {
+    font-size: 1.8rem;
+  }
+  
+  .testimonial-subheading {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  
+  .testimonial-container {
+    min-height: 100px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
   

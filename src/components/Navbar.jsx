@@ -15,6 +15,14 @@ function Navbar() {
     setLastScrollY(window.scrollY);
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMenuOpen(false); // Close mobile menu after clicking
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", controlNavbar);
     return () => {
@@ -30,10 +38,10 @@ function Navbar() {
 
       {/* Desktop Links */}
       <ul className="navbar-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a></li>
+        <li><a href="#about-us" onClick={(e) => { e.preventDefault(); scrollToSection('about-us'); }}>About Us</a></li>
+        <li><a href="#values" onClick={(e) => { e.preventDefault(); scrollToSection('values'); }}>Values</a></li>
+        <li><a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}>Services</a></li>
       </ul>
 
       {/* Mobile Menu Button */}
@@ -43,10 +51,10 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-        <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
-        <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
-        <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-        <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+        <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>Home</a>
+        <a href="#about-us" onClick={(e) => { e.preventDefault(); scrollToSection('about-us'); }}>About Us</a>
+        <a href="#values" onClick={(e) => { e.preventDefault(); scrollToSection('values'); }}>Values</a>
+        <a href="#services" onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}>Services</a>
       </div>
     </nav>
   );

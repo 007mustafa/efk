@@ -3,7 +3,7 @@ import "./HeroSection.css";
 
 function HeroSection() {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <img src="/images/crane.jpg" alt="Background" className="hero-img" />
       <div className="overlay"></div>
       <div className="hero-content">

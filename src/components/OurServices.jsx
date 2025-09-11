@@ -55,13 +55,27 @@ function OurServices() {
     autoplay: true,
     autoplaySpeed: 3500,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 640, settings: { slidesToShow: 1 } },
+      { 
+        breakpoint: 1024, 
+        settings: { 
+          slidesToShow: 2,
+          centerMode: true,
+          centerPadding: '0px'
+        } 
+      },
+      { 
+        breakpoint: 640, 
+        settings: { 
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '0px'
+        } 
+      },
     ],
   };
 
   return (
-    <section className="services-section">
+    <section className="services-section" id="services">
       {/* Heading */}
       <motion.div
         className="services-heading-wrapper"
