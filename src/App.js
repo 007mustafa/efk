@@ -16,7 +16,6 @@ function App() {
       <WhoWeAre />
       <CoreValues />
       <OurServices />
-      <OurTeam />
       <Testimonials />
       <Footer />
     </div>
