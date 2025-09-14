@@ -4,7 +4,7 @@ import "./WhoWeAre.css";
 function WhoWeAre() {
   const slides = [
     {
-      text: `Eef KayTech is a leading engineering firm in Pakistan, dedicated to providing customized technology solutions and consulting services. 
+      text: `Eef KayTech is a leading engineering firm in Pakistan, dedicatedto providing customized technology solutions and consulting services. 
       Our mission is to offer high-quality services that enhance operational efficiency across industries.`,
       img: "/images/crane.jpg",
     },

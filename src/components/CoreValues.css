@@ -94,7 +94,8 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .values-section {
-    padding: 60px 20px;
+    padding: 50px 25px;
+    overflow-x: hidden;
   }
   
   .values-heading {
@@ -102,56 +103,78 @@
   }
   
   .values-container {
-    gap: 25px;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
+    padding: 0 60px;
+    max-width: calc(100vw - 50px);
+    margin: 0 auto;
   }
   
   .value-card {
     max-width: 100%;
-    padding: 30px 20px;
+    width: 100%;
+    padding: 25px 15px;
+    flex: none;
+    box-sizing: border-box;
   }
   
   .value-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   
   .value-card p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .value-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .values-section {
-    padding: 40px 15px;
+    padding: 40px 20px;
+    overflow-x: hidden;
   }
   
   .values-heading-wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   
   .values-heading {
     font-size: 1.8rem;
   }
   
+  .values-container {
+    padding: 0 5px;
+    gap: 15px;
+    max-width: calc(100vw - 40px);
+    margin: 0 auto;
+  }
+  
   .value-card {
-    padding: 25px 15px;
+    padding: 20px 12px;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .value-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 12px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
   
   .value-card p {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
   
   .value-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 20px;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 15px;
   }
 }
   

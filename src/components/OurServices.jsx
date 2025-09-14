@@ -45,38 +45,50 @@ function OurServices() {
     },
   ];
 
-  // react-slick slider settings
   const settings = {
     dots: true,
     infinite: true,
-    speed: 600,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    swipeToSlide: true,
+    touchMove: true,
     responsive: [
-      { 
-        breakpoint: 1024, 
-        settings: { 
+      {
+        breakpoint: 1024, // Tablet
+        settings: {
           slidesToShow: 2,
-          centerMode: true,
-          centerPadding: '0px'
-        } 
+          slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: "0px",
+        },
       },
-      { 
-        breakpoint: 640, 
-        settings: { 
+      {
+        breakpoint: 768, // Mobile
+        settings: {
           slidesToShow: 1,
-          centerMode: true,
-          centerPadding: '0px'
-        } 
+          slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: "0px",
+        },
+      },
+      {
+        breakpoint: 480, // Small Mobile
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          centerPadding: "0px",
+        },
       },
     ],
   };
 
   return (
     <section className="services-section" id="services">
-      {/* Heading */}
       <motion.div
         className="services-heading-wrapper"
         initial={{ opacity: 0, y: -40 }}
@@ -84,13 +96,12 @@ function OurServices() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-       <h2 className="services-heading">
-  <span className="white">Our</span> <span className="blue">Services</span>
-</h2>
-
+        <h2 className="services-heading">
+          <span className="white">Our</span>{" "}
+          <span className="blue">Services</span>
+        </h2>
       </motion.div>
 
-      {/* Slider */}
       <Slider {...settings} className="services-slider">
         {services.map((service, index) => (
           <motion.div

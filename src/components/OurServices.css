@@ -118,9 +118,12 @@
   }
   
   .service-card {
-    margin: 0 5px;
-    padding: 25px 15px;
-    min-height: 200px;
+    margin: 0 25px;
+    padding: 30px 20px;
+    min-height: 220px;
+    max-width: calc(1000vw - 1000px);
+    width: calc(1000vw - 100px);
+    box-sizing: border-box;
   }
   
   .service-card h3 {
@@ -160,9 +163,12 @@
   }
   
   .service-card {
-    padding: 20px 12px;
-    min-height: 180px;
-    margin: 0 2px;
+    padding: 25px 18px;
+    min-height: 200px;
+    margin: 0 20px;
+    max-width: calc(100vw - 80px);
+    width: calc(100vw - 80px);
+    box-sizing: border-box;
   }
   
   .service-card h3 {

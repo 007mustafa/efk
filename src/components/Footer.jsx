@@ -11,9 +11,9 @@ function Footer() {
         </p>
         <p className="footer-text">
           Email:{" "}
-          <a href="mailto:info@eefkaytech.com">info@eefkaytech.com</a> |{" "}
-          <a href="mailto:fasih@eefkaytech.com">fasih@eefkaytech.com</a> |{" "}
-          <a href="mailto:eefkaytech@gmail.com">eefkaytech@gmail.com</a>
+          <a href="mailto:info@eefkaytech.com?subject=Inquiry from Eef KayTech Website&body=Dear Eef KayTech Team,%0D%0A%0D%0AI am interested in your services and would like to know more information.%0D%0A%0D%0APlease contact me at your earliest convenience.%0D%0A%0D%0AThank you,%0D%0A[Your Name]">info@eefkaytech.com</a> |{" "}
+          <a href="mailto:fasih@eefkaytech.com?subject=Inquiry from Eef KayTech Website&body=Dear Mr. Fasih,%0D%0A%0D%0AI am interested in your services and would like to know more information.%0D%0A%0D%0APlease contact me at your earliest convenience.%0D%0A%0D%0AThank you,%0D%0A[Your Name]">fasih@eefkaytech.com</a> |{" "}
+          <a href="mailto:eefkaytech@gmail.com?subject=Inquiry from Eef KayTech Website&body=Dear Eef KayTech Team,%0D%0A%0D%0AI am interested in your services and would like to know more information.%0D%0A%0D%0APlease contact me at your earliest convenience.%0D%0A%0D%0AThank you,%0D%0A[Your Name]">eefkaytech@gmail.com</a>
         </p>
         <p className="footer-text">
           Address: PLT 909 C, FLT 5, 2ND FLOOR, BLK 2, P.E.C.H.S SOCIETY,

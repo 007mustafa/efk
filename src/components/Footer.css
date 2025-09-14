@@ -87,3 +87,22 @@
     font-size: 0.8rem;
   }
 }
+
+.email-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  color: #ffd60a;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.copy-btn:hover {
+  color: #ffffff;
+}
